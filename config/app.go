@@ -3,6 +3,7 @@ package config
 import (
 	"github.com/DoNewsCode/core"
 	"github.com/DoNewsCode/core-starter/app"
+	"github.com/DoNewsCode/core-starter/pkg/docs"
 	"github.com/DoNewsCode/core/config"
 	"github.com/DoNewsCode/core/di"
 	"github.com/DoNewsCode/core/srvhttp"
@@ -21,5 +22,6 @@ var (
 		core.NewServeModule,         // server module
 		srvhttp.HealthCheckModule{}, // health check module (http demo)
 		srvhttp.DocsModule{},        // docs
+		docs.NewDocServeModule,
 	}
 )
