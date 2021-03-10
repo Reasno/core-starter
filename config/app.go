@@ -22,6 +22,6 @@ var (
 		core.NewServeModule,         // server module
 		srvhttp.HealthCheckModule{}, // health check module (http demo)
 		srvhttp.DocsModule{},        // docs
-		docs.NewDocServeModule,
+		docs.New,
 	}
 )
