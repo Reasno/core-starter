@@ -1,0 +1,30 @@
+syntax = "proto3";
+
+package app.proto;
+
+option go_package = "github.com/DoNewsCode/core-starter/app/proto;proto";
+option java_multiple_files = true;
+option java_package = "app.proto";
+
+service App {
+    rpc CreateApp (CreateAppRequest) returns (CreateAppReply);
+    rpc UpdateApp (UpdateAppRequest) returns (UpdateAppReply);
+    rpc DeleteApp (DeleteAppRequest) returns (DeleteAppReply);
+    rpc GetApp (GetAppRequest) returns (GetAppReply);
+    rpc ListApp (ListAppRequest) returns (ListAppReply);
+}
+
+message CreateAppRequest {}
+message CreateAppReply {}
+
+message UpdateAppRequest {}
+message UpdateAppReply {}
+
+message DeleteAppRequest {}
+message DeleteAppReply {}
+
+message GetAppRequest {}
+message GetAppReply {}
+
+message ListAppRequest {}
+message ListAppReply {}
