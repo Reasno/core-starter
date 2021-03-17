@@ -20,3 +20,54 @@ log:
   format: logfmt
   level: debug
 
+# The database configuration
+gorm:
+  default:
+    allowGlobalUpdate: false
+    createBatchSize: 0
+    database: mysql
+    disableAutomaticPing: false
+    disableForeignKeyConstraintWhenMigrating: false
+    disableNestedTransaction: false
+    dryRun: false
+    dsn: root@tcp(127.0.0.1:3306)/app?charset=utf8mb4&parseTime=True&loc=Local
+    fullSaveAssociations: false
+    namingStrategy:
+      singularTable: false
+      tablePrefix: ""
+    prepareStmt: false
+    queryFields: false
+    skipDefaultTransaction: false
+  foo:
+    allowGlobalUpdate: false
+    createBatchSize: 0
+    database: mysql
+    disableAutomaticPing: false
+    disableForeignKeyConstraintWhenMigrating: false
+    disableNestedTransaction: false
+    dryRun: false
+    dsn: root@tcp(127.0.0.1:3306)/foo?charset=utf8mb4&parseTime=True&loc=Local
+    fullSaveAssociations: false
+    namingStrategy:
+      singularTable: false
+      tablePrefix: ""
+    prepareStmt: false
+    queryFields: false
+    skipDefaultTransaction: false
+  bar:
+    allowGlobalUpdate: false
+    createBatchSize: 0
+    database: mysql
+    disableAutomaticPing: false
+    disableForeignKeyConstraintWhenMigrating: false
+    disableNestedTransaction: false
+    dryRun: false
+    dsn: root@tcp(127.0.0.1:3306)/bar?charset=utf8mb4&parseTime=True&loc=Local
+    fullSaveAssociations: false
+    namingStrategy:
+      singularTable: false
+      tablePrefix: ""
+    prepareStmt: false
+    queryFields: false
+    skipDefaultTransaction: false
+
